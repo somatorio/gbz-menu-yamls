@@ -5,14 +5,14 @@ options:
   samba:
     desc: "Samba - Enabled"
     desc2: "Samba - Disabled"
-    cmd: "/home/retropie/RetroPie-Setup/retropie_packages.sh samba depends remove"
-    undocmd: "/home/retropie/RetroPie-Setup/retropie_packages.sh samba depends install && /home/retropie/RetroPie-Setup/retropie_packages.sh samba install_shares"
+    cmd: "/home/pi/RetroPie-Setup/retropie_packages.sh samba depends remove"
+    undocmd: "/home/pi/RetroPie-Setup/retropie_packages.sh samba depends install && /home/retropie/RetroPie-Setup/retropie_packages.sh samba install_shares"
     check: "test -r /etc/samba/smb.conf"
 
   romservice:
     desc: "ROMService (for USB keys) - Enabled"
     desc2: "ROMService (for USB keys) - Disabled"
-    cmd: "/home/retropie/RetroPie-Setup/retropie_packages.sh usbromservice enable"
+    cmd: "/home/pi/RetroPie-Setup/retropie_packages.sh usbromservice enable"
     undocmd: "/home/retropie/RetroPie-Setup/retropie_packages.sh usbromservice disable"
     check: "test ! -r /opt/retropie/supplementary/usbromservice/disabled"
 

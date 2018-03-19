@@ -1,0 +1,12 @@
+---
+name: "GBZ-Menu Updates"
+
+options:
+  gbzmenu:
+    desc: "Update GBZ-Menu"
+    cmd: "curl -fsSL gbz-menu.somatorio.org | sh"
+
+  yamls:
+    desc: "Update YAML lists"
+    cmd: "cd /home/pi/RetroPie/ROMS/gbz-menu && git pull origin master"
+
