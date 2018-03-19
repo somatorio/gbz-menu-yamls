@@ -8,5 +8,5 @@ options:
 
   yamls:
     desc: "Update YAML lists"
-    cmd: "cd /home/pi/RetroPie/ROMS/gbz-menu && git pull origin master"
+    cmd: "cd /home/pi/RetroPie/roms/gbz-menu && git pull origin master"
 
